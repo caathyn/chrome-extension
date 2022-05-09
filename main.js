@@ -4,7 +4,5 @@ const contents = $('#contents');
 const contentsParent = contents.parent();
 contents.remove();
 
-const newImgNode = $('<img id="the-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/SuccessKid.jpg/256px-SuccessKid.jpg">');
-contentsParent.prepend(newImgNode);
-const dreamText = $(<p>Get back to achieving your coding dreams</p>)
-newImgNode.prepend(dreamText);
+const url = "https://media.wired.com/photos/5e3246cd56bcac00087f0a1e/1:1/w_1329,h_1329,c_limit/Culture-Success-Meme-Kid.jpg";
+contentsParent.prepend('<img src="https://media.wired.com/photos/5e3246cd56bcac00087f0a1e/1:1/w_1329,h_1329,c_limit/Culture-Success-Meme-Kid.jpg" />')
