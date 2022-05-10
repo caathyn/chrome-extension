@@ -12,3 +12,18 @@ contentsParent.prepend(image)
 const message = $('<p>Get back to achieving your coding dreams</p>')
 message.addClass('beautText')
 contentsParent.prepend(message)
+
+$('div').on('click', function() {
+  alert('A div was clicked!');
+});
+
+$.ajax({
+  method: 'GET',
+  url: 'https://unsplash.it/list',
+  success: function(result) {
+    console.log("result -->", result)
+  },
+  error: function(err) {
+    console.log("error -->", err)
+  }
+})
